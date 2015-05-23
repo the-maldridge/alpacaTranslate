@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> 
     <title>Alpaca Translate | LUG@UTD</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -10,14 +11,17 @@
 	  <h1>Alpaca Translator</h1>
 	  <h4>Reach remote IT personel using alpacas, presented by the Linux Users's Group</h4>
 	  <hr />
-	  <p>Please compose your question in the box below and press submit, your question will be translated into alpaca and then displayed to you for dispatch to a courier of your choosing.</p>
-	  <form>
-	    User's Name: <input name="user"><br />
-	    <textarea name="question" rows=5 cols=80>Type your question here!</textarea><br />
-	    <input type="submit" name="submit" value="Submit">
-	  </form>
+	  <div id="interact">
+	    <p>Please compose your question in the box below and press submit, your question will be translated into alpaca and then displayed to you for dispatch to a courier of your choosing.</p>
+	    <form action="" id="tForm">
+	      User's Name: <input name="user"><br />
+	      <textarea name="question" rows=5 cols=80>Type your question here!</textarea><br />
+	      <button onClick="translate()">Alpacify!</button>
+	    </form>
+	  </div>
 	</div>
       </div>
     </div>
+    <script type="text/javascript" src="translate.js"></script>
   </body>
 </html>
